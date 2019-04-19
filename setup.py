@@ -8,7 +8,7 @@ setup(
   author = 'Matteo Magri',                   
   author_email = 'magri.matteo@outlook.com',      
   url = 'https://github.com/MatteoMagri/Mandelpy',   
-  download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/MatteoMagri/Mandelpy/archive/Mandelbrot.tar.gz',
   keywords = ['Python', 'Mandelbrot', 'PIL', 'ART', 'Graphics'],   
   install_requires=[            # I get to this in a second
           'validators',
