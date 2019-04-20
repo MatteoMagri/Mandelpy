@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
   name = 'mandelpy',         
   packages = ['mandelpy'],   
-  version = '1.1',      
+  version = '1.2',      
   license='MIT',        
   description = 'Mandelbrot library for Python',   
   author = 'Matteo Magri',                   
   author_email = 'magri.matteo@outlook.com',      
   url = 'https://github.com/MatteoMagri/Mandelpy',   
-  download_url = 'https://github.com/MatteoMagri/Mandelpy/archive/pipv1.1.tar.gz',
+  download_url = 'https://github.com/MatteoMagri/Mandelpy/archive/Mandelpy-v1.2.tar.gz',
   keywords = ['Python', 'Mandelbrot', 'PIL', 'ART', 'Graphics'],   
   install_requires=[            
           'Pillow',
