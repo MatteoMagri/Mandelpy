@@ -8,7 +8,7 @@ setup(
   author = 'Matteo Magri',                   
   author_email = 'magri.matteo@outlook.com',      
   url = 'https://github.com/MatteoMagri/Mandelpy',   
-  download_url = 'https://github.com/MatteoMagri/Mandelpy/archive/Mandelbrot.tar.gz',
+  download_url = 'https://github.com/MatteoMagri/Mandelpy/archive/v1.0.tar.gz',
   keywords = ['Python', 'Mandelbrot', 'PIL', 'ART', 'Graphics'],   
   install_requires=[            
           'Pillow',
