@@ -11,7 +11,7 @@ setup(
   download_url = 'https://github.com/MatteoMagri/Mandelpy/archive/Mandelpy-v1.0.tar.gz',
   keywords = ['Python', 'Mandelbrot', 'PIL', 'ART', 'Graphics'],   
   install_requires=[            
-          'PIL',
+          'Pillow',
           'Scipy',
       ],
   classifiers=[
