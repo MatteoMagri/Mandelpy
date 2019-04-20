@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'mandelpy',         
   packages = ['mandelpy'],   
-  version = '1.0',      
+  version = '1.1',      
   license='MIT',        
   description = 'Mandelbrot library for Python',   
   author = 'Matteo Magri',                   
