@@ -1,18 +1,18 @@
 from distutils.core import setup
 setup(
-  name = 'Mandelpy',         
-  packages = ['Mandelpy'],   
+  name = 'mandelpy',         
+  packages = ['mandelpy'],   
   version = '1.0',      
   license='MIT',        
   description = 'Mandelbrot library for Python',   
   author = 'Matteo Magri',                   
   author_email = 'magri.matteo@outlook.com',      
   url = 'https://github.com/MatteoMagri/Mandelpy',   
-  download_url = 'https://github.com/MatteoMagri/Mandelpy/archive/Mandelpy-v1.0.tar.gz',
+  download_url = 'https://github.com/MatteoMagri/Mandelpy/archive/Mandelbrot.tar.gz',
   keywords = ['Python', 'Mandelbrot', 'PIL', 'ART', 'Graphics'],   
   install_requires=[            
           'Pillow',
-          'Scipy',
+          'pcipy',
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',      
