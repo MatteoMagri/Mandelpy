@@ -1,5 +1,5 @@
 Mandelpy
-######
+--------
 
 *Mandelpy* is a Python library for explore and picture the Mandelbrot Set.
 
