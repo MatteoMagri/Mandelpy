@@ -1,6 +1,6 @@
 # Mandelpy
 
-A python library for explore the Mandelbrot Set
+A python library for exploring the Mandelbrot Set
 
 ## Getting Started
 
