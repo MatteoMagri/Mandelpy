@@ -11,8 +11,8 @@ class MandelbrotSet():
     coordinatey = 0.0
 
 # number of points 
-    xpoints = 124
-    ypoints = 93
+    xpoints = 60
+    ypoints = 60
 
 # radius value for the picture
     radius = 1.8
@@ -20,6 +20,9 @@ class MandelbrotSet():
 # radius projection
     radiusx = radius*xpoints/sqrt(xpoints**2+ypoints**2)
     radiusy = radius*ypoints/sqrt(xpoints**2+ypoints**2)
+
+# definition
+    definition = 100
 
 
 # image name
@@ -39,7 +42,7 @@ class MandelbrotSet():
     on = True
 
 # define if the point is or not in the Mandelbrot Set
-    def mandelbrot(self,z , c , n = 180):
+    def mandelbrot(self,z , c , n = definition):
         if abs(z) > 2:
             return 1
         elif n > 0:
@@ -86,6 +89,9 @@ class MandelbrotSet():
 
 # generate automaticly the image
     def image(self, workflow = off):
+        self.size(self.xpoints,self.ypoints)
+        self.coordinates(self.coordinatex,self.coordinatey)
+        self.zoom(-log(self.radius))
         self.image_data(workflow)
         self.map(workflow)
         self.image_save(workflow)
@@ -97,23 +103,35 @@ class MandelbrotSet():
         self.radiusy = self.radius*self.ypoints/sqrt(self.xpoints**2+self.ypoints**2)
 
 # set coordinates
-    def coordinates(self, l = (-1.75,0)):
-        self.coordinatex = l[0]
-        self.coordinatey = l[1]
+    def coordinates(self, lx = -1.75, ly = 0):
+        self.coordinatex = lx
+        self.coordinatey = ly
 
 # set image size:
-    def size(self, l = (120,90)):
-        self.xpoints = l[0]
-        self.ypoints = l[1]
+    def size(self, lx = 120, ly = 90):
+        self.xpoints = lx
+        self.ypoints = ly
 
 # set typography
     def typo(self, path):
-
-        self.unit = path
+        t = []
+        im = Image.open(path).convert('LA').split()[0]
+        l = list(im.getdata())
+        for i in range(im.size[1]):
+            t.append(l[i*im.size[0]:(i+1)*im.size[0]])
+        self.unit = t
 
 # set name
     def set_name(self,img_name = "Mandelbrot_"+str(int(time()))[-4:-1]):
         self.name = img_name
+
+
+
+m = MandelbrotSet()
+
+m.typo("C:/Users/D/Pictures/ast.png")
+
+m.image(True)
 
 
 
