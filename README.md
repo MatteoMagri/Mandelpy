@@ -90,7 +90,7 @@ m.image(True)
 	
 ## Authors
 
-* **Matteo Magri** * - [MatteoMagri](https://github.com/MatteoMagri)
+* **Matteo Magri**  - [MatteoMagri](https://github.com/MatteoMagri)
 
 ## License
 
