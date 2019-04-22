@@ -17,8 +17,8 @@ setup(
   classifiers=[
     'Development Status :: 3 - Alpha',      
 
-    'Intended Audience :: Artist',     
-    'Topic :: Software Development :: Build Tools',
+    'Intended Audience :: Education',     
+    'Topic :: Artistic Software',
 
     'License :: OSI Approved :: MIT License',   
 
